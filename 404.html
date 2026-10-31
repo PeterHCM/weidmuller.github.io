@@ -2,33 +2,74 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>Website Đang Bảo Trì / Maintenance Mode</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    // Chuyển http:// sang https:// / Redirect http to https
+    if (location.protocol === "http:" && !/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      location.replace("https://" + location.host + location.pathname + location.search + location.hash);
+    }
+  </script>
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <title>Không tìm thấy trang / Page Not Found – Weidmuller Việt Nam</title>
+  <meta name="robots" content="noindex">
+  <meta name="description" content="Weidmuller Việt Nam: IoT Gateway, rơ le kiếng và rơ le rắn / Relay modules, Solid-state relays | Cầu đấu dây / Terminal | Bộ nguồn xung / Power Supply | Bộ chuyển đổi tín hiệu / Analog signal conditioning | Hệ thống đo và hiển thị / Measuring and monitoring systems | Chống sét / VARITECTOR lightning and surge protection | PLC interfaces and migration solutions | Công cụ, dụng cụ / Tools">
+  <meta name="keywords" content="Đại lý Weidmuller, Đại diện Weidmuller, Weidmuller Vietnam, Cầu đấu dây, Đầu nối điện, Rơ le Weidmuller, Thiết bị chống cháy nổ">
+  <meta name="theme-color" content="#eb8c00">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <meta name="Description" content="Weidmuller chuyển cấp: IoT Gateway, Rờ le kiếng và rờ le rắn / Relay modules; Solid-state relays | Cầu đấu dây / Terminal | Bộ nguồn xung / Power Supply | Bộ chuyển đổi tín hiệu / Analog signal conditioning | Hệ thống đo và hiển thị / Measuring and monitoring systems | Chống sét / VARITECTOR lightning and surge protection | PLC interfaces and migration solutions | Công cụ, dụng cụ / Tools,..." />
-  <meta name="Keywords" content="Đại lý Weidmuller, Đại diện Weidmuller, Weidmuller Vietnam,Cầu đấu dây,Đầu nối điện,Rơ le Weidmuller,Thiết bị chống cháy nổ" />
-  <meta property="og:image" content="/weidmueller_logo.png"/>
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://weidmuller.vn/">
+  <meta property="og:title" content="Weidmuller Việt Nam">
+  <meta property="og:description" content="Website đang bảo trì – liên hệ info@weidmuller.vn hoặc Zalo để được hỗ trợ.">
+  <meta property="og:image" content="https://weidmuller.vn/weidmueller_logo.png">
+
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-  <div class="wrapper">
-    <!-- Vietnamese Section -->
-    <div class="box">
-      <h1>Chúng tôi đang bảo trì</h1>
-      <h1><em>We’re Currently Under Maintenance</em></h1>
-      <p>Website sẽ sớm trở lại. Cảm ơn bạn đã kiên nhẫn.</p>
-      <p><em>Our website is temporarily unavailable. We’ll be back soon. Thank you for your patience.</em></p>
-      <div class="contact">
-        <p><strong>Liên hệ chúng tôi:</strong></p>
-        <p><strong><em>Contact Us</em></strong></p>
-        <p>Email: <a href="mailto:info@weidmuller.vn">info@weidmuller.vn</a></p>
-        <p>
-          <a href="https://zalo.me/1870759641216368940" target="_blank">
-            <img src="/zalo_logo.png" alt="Zalo icon"> Chat qua Zalo / <em>Chat via Zalo</em>
-          </a>
-        </p>
-      </div>
-    </div>  
-  </div>
+  <main class="card">
+    <img class="logo" src="/weidmueller_logo.png" alt="Weidmüller" width="664" height="89">
+
+    <div class="icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+      </svg>
+    </div>
+
+    <h1>404 – Không tìm thấy trang</h1>
+    <p class="subtitle" lang="en">Page not found</p>
+
+    <p class="message">
+      Trang bạn tìm không tồn tại hoặc website đang bảo trì.
+      <em lang="en">The page you are looking for does not exist or the website is under maintenance.</em>
+    </p>
+
+    <p style="margin:20px 0 0"><a class="btn btn-outline" href="/">← Về trang chủ / Home</a></p>
+
+    <hr class="divider">
+
+    <p class="contact-title">Liên hệ chúng tôi / <em lang="en">Contact us</em></p>
+
+    <div class="actions">
+      <a class="btn btn-primary" href="mailto:info@weidmuller.vn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="2" y="4" width="20" height="16" rx="2"/>
+          <path d="m22 7-10 6L2 7"/>
+        </svg>
+        info@weidmuller.vn
+      </a>
+      <a class="btn btn-outline" href="https://zalo.me/1870759641216368940" target="_blank" rel="noopener noreferrer">
+        <img src="/zalo_logo.png" alt="" width="22" height="22">
+        Chat qua Zalo
+      </a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    &copy; <span id="year">2026</span> Weidmuller Việt Nam
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
